@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinAppCustomCellValue", "WinAppCustomCellValue\WinAppCustomCellValue.vbproj", "{810622B8-46A9-4407-B8B1-BA4E2EA81DE8}"
 EndProject
