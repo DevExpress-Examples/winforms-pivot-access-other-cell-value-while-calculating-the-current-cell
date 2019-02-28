@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/WinAppCustomCellValue/Form1.cs) (VB: [Form1.vb](./VB/WinAppCustomCellValue/Form1.vb))
 <!-- default file list end -->
-# How to use the other cell's values in the current cell value calculation
+# How to Use the Other Cell's Values in the Current Cell Value Calculation
 
 This example calculates percentage based on the "Beverages" row value for each column.
 
