@@ -37,8 +37,8 @@ namespace WinAppCustomCellValue
                     return;
                 }
 
-                var rowValues = e.GetRowFields().Select(f => f.FieldName == "CategoryName" ? "Beverages" : e.GetFieldValue(f)).ToArray();
-                var columnValues = e.GetColumnFields().Select(f => f.FieldName == "CategoryName" ? "Beverages" : e.GetFieldValue(f)).ToArray();
+                var rowValues = e.GetRowFields().Select(f => f == fieldCategoryName ? "Beverages" : e.GetFieldValue(f)).ToArray();
+                var columnValues = e.GetColumnFields().Select(f => f == fieldCategoryName ? "Beverages" : e.GetFieldValue(f)).ToArray();
                 decimal beveragesValue = Convert.ToDecimal(e.GetCellValue(columnValues, rowValues, e.DataField));
                 if (beveragesValue == 0)
                     e.Value = null;
