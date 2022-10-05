@@ -21,7 +21,7 @@ Namespace WinAppCustomCellValue
 		Private Sub pivotGridControl1_CustomCellValue(ByVal sender As Object, ByVal e As PivotCellValueEventArgs) Handles pivotGridControl1.CustomCellValue
 			' Calculates the 'Percent' field values.
 			If e.DataField.Name = "PercentOfBeverages" Then
-				' Do not display grand total values.
+				' Hides grand total values.
 				If e.RowValueType = PivotGridValueType.GrandTotal Then
 					e.Value = Nothing
 					Return
