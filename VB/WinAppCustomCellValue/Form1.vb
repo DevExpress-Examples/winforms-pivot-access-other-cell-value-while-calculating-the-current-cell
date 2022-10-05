@@ -21,11 +21,12 @@ Namespace WinAppCustomCellValue
 		Private Sub pivotGridControl1_CustomCellValue(ByVal sender As Object, ByVal e As PivotCellValueEventArgs) Handles pivotGridControl1.CustomCellValue
 			' Calculates the 'Percent' field values.
 			If e.DataField.Name = "PercentOfBeverages" Then
-				' Hides grand total values.
+				' Do not display grand total values.
 				If e.RowValueType = PivotGridValueType.GrandTotal Then
 					e.Value = Nothing
 					Return
 				End If
+
 				Dim rowValues = e.GetRowFields().Select(Function(f) If(f Is fieldCategoryName, "Beverages", e.GetFieldValue(f))).ToArray()
 				Dim columnValues = e.GetColumnFields().Select(Function(f) If(f Is fieldCategoryName, "Beverages", e.GetFieldValue(f))).ToArray()
 				Dim beveragesValue As Decimal = Convert.ToDecimal(e.GetCellValue(columnValues, rowValues, e.DataField))
