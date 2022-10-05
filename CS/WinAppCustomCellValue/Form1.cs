@@ -24,7 +24,7 @@ namespace WinAppCustomCellValue {
         private void pivotGridControl1_CustomCellValue(object sender, PivotCellValueEventArgs e) {
             // Calculates the 'Percent' field values.
             if (e.DataField.Name == "PercentOfBeverages") {
-                // Do not display grand total values.
+                // Hides grand total values.
                 if (e.RowValueType == PivotGridValueType.GrandTotal) {
                     e.Value = null;
                     return;
