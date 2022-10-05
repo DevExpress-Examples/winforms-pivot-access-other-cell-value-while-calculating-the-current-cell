@@ -3,17 +3,13 @@ using DevExpress.XtraPivotGrid;
 using System.Linq;
 using System;
 
-namespace WinAppCustomCellValue
-{
-    public partial class Form1 : XtraForm
-    {
-        public Form1()
-        {
+namespace WinAppCustomCellValue {
+    public partial class Form1 : XtraForm {
+        public Form1() {
             InitializeComponent();
             salesPersonTableAdapter1.Fill(nwindDataSet1.SalesPerson);
 
-            PivotGridField fieldPercentOfBeverages = new PivotGridField()
-            {
+            PivotGridField fieldPercentOfBeverages = new PivotGridField() {
                 FieldName = "Extended Price",
                 Area = PivotArea.DataArea,
                 Caption = "% Beverages",
