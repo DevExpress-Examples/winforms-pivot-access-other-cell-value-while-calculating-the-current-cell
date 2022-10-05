@@ -25,18 +25,14 @@ namespace WinAppCustomCellValue
             pivotGridControl1.Fields.Add(fieldPercentOfBeverages);
         }
 
-        private void pivotGridControl1_CustomCellValue(object sender, PivotCellValueEventArgs e)
-        {
+        private void pivotGridControl1_CustomCellValue(object sender, PivotCellValueEventArgs e) {
             // Calculates the 'Percent' field values.
-            if (e.DataField.Name == "PercentOfBeverages")
-            {
+            if (e.DataField.Name == "PercentOfBeverages") {
                 // Do not display grand total values.
-                if (e.RowValueType == PivotGridValueType.GrandTotal)
-                {
+                if (e.RowValueType == PivotGridValueType.GrandTotal) {
                     e.Value = null;
                     return;
                 }
-
                 var rowValues = e.GetRowFields().Select(f => f == fieldCategoryName ? "Beverages" : e.GetFieldValue(f)).ToArray();
                 var columnValues = e.GetColumnFields().Select(f => f == fieldCategoryName ? "Beverages" : e.GetFieldValue(f)).ToArray();
                 decimal beveragesValue = Convert.ToDecimal(e.GetCellValue(columnValues, rowValues, e.DataField));
