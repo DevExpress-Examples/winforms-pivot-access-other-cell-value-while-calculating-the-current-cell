@@ -26,7 +26,6 @@ Namespace WinAppCustomCellValue
 					e.Value = Nothing
 					Return
 				End If
-
 				Dim rowValues = e.GetRowFields().Select(Function(f) If(f Is fieldCategoryName, "Beverages", e.GetFieldValue(f))).ToArray()
 				Dim columnValues = e.GetColumnFields().Select(Function(f) If(f Is fieldCategoryName, "Beverages", e.GetFieldValue(f))).ToArray()
 				Dim beveragesValue As Decimal = Convert.ToDecimal(e.GetCellValue(columnValues, rowValues, e.DataField))
