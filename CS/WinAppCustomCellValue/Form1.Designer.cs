@@ -76,7 +76,7 @@
             // 
             this.fieldExtendedPrice1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldExtendedPrice1.AreaIndex = 0;
-            this.fieldExtendedPrice1.Caption = "Price";
+            this.fieldExtendedPrice1.Caption = "Sales";
             dataSourceColumnBinding2.ColumnName = "Extended Price";
             this.fieldExtendedPrice1.DataBinding = dataSourceColumnBinding2;
             this.fieldExtendedPrice1.Name = "fieldExtendedPrice1";

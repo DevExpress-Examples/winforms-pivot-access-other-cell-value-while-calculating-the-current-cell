@@ -11,7 +11,7 @@ Namespace WinAppCustomCellValue
 			InitializeComponent()
 			salesPersonTableAdapter1.Fill(nwindDataSet1.SalesPerson)
 
-			Dim fieldPercentOfBeverages As New PivotGridField() With {.FieldName = "Extended Price", .Area = PivotArea.DataArea, .Caption = "% Beverages", .Name = "PercentOfBeverages"}
+			Dim fieldPercentOfBeverages As New PivotGridField() With {.FieldName = "Extended Price", .Area = PivotArea.DataArea, .Caption = "% of Beverages Sales", .Name = "PercentOfBeverages"}
 
 			fieldPercentOfBeverages.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric
 			fieldPercentOfBeverages.CellFormat.FormatString = "P"

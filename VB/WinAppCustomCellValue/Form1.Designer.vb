@@ -67,7 +67,7 @@
             '
             Me.fieldExtendedPrice1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea
             Me.fieldExtendedPrice1.AreaIndex = 0
-            Me.fieldExtendedPrice1.Caption = "Price"
+            Me.fieldExtendedPrice1.Caption = "Sales"
             DataSourceColumnBinding2.ColumnName = "Extended Price"
             Me.fieldExtendedPrice1.DataBinding = DataSourceColumnBinding2
             Me.fieldExtendedPrice1.Name = "fieldExtendedPrice1"

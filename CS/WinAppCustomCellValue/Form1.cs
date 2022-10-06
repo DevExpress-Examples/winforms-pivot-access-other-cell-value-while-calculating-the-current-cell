@@ -12,7 +12,7 @@ namespace WinAppCustomCellValue {
             PivotGridField fieldPercentOfBeverages = new PivotGridField() {
                 FieldName = "Extended Price",
                 Area = PivotArea.DataArea,
-                Caption = "% Beverages",
+                Caption = "% of Beverages Sales",
                 Name = "PercentOfBeverages"
             };
 
