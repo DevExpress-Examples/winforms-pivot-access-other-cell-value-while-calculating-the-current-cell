@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# How to Use the Other Cell's Values in the Current Cell Value Calculation
+# Pivot Grid for WinForms - How to Use the Other Cell's Values in the Current Cell Value Calculation
 
 This example calculates percentage based on the _Beverages_ row value for each column. The Pivot Grid handles the [PivotGridControl.CustomCellValue](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomCellValue) event to display a calculated percentage value in the cell that belongs to the _% of Beverages Sales_ column. The grand total values are hidden.
 
